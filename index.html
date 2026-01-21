@@ -9,26 +9,26 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
-  <header class="flex">
-    <nav class="flex justify-between items-center w-full border-bottom bottom-1 p-4 shadow-sm dark:bg-[#232d40]">
+<body class="flex flex-col min-h-screen bg-[#f9fbfc] dark:bg-[#232d40] dark:text-white ">
+  <header>
+    <nav class="flex justify-between items-center bg-white w-full  border-bottom bottom-1 p-4 shadow-xl dark:bg-[#232d40]">
       <h1 class="text-black font-bold text-3xl dark:text-white">Móviles <span class="text-[#337de8]">DAW</span></h1>
-      <div class="flex flex-col z-3 items-end relative md:static md:items-center ">
+      <div class="flex flex-col z-3 items-end relative md:static md:items-center">
         <input type="checkbox" id="menu-toggle" class="peer hidden" />
         <label for="menu-toggle" class="font-bold text-2xl cursor-pointer md:hidden dark:text-white">☰</label>
-        <ul class="flex flex-col h-0 w-30 divide-y divide-gray-200 overflow-hidden absolute top-full right-2 bg-white rounded-xl shadow-lg peer-checked:h-auto md:flex-row md:static md:rounded-none md:h-auto md:shadow-none md:bg-transparent md:divide-y-0 md:right-auto md:w-full md:gap-5 dark:bg-[#232d40]">
-          <li class="py-3 px-4 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Inicio</a></li>
-          <li class="py-3 px-4 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Samsung</a></li>
-          <li class="py-3 px-4 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">iPhone</a></li>
-          <li class="py-3 px-4 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Pixel</a></li>
+        <ul class="flex flex-col transition-all duration-300 h-0 w-30 divide-y text-xl divide-gray-200 overflow-hidden absolute top-full right-2 bg-white rounded-xl shadow-lg peer-checked:h-auto md:flex-row md:static md:rounded-none md:h-auto md:shadow-none md:bg-transparent md:divide-y-0 md:right-auto md:w-full md:gap-5 dark:bg-[#232d40] dark:divide-gray-500">
+          <li class="py-3 px-4 transition-colors duration-300 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Inicio</a></li>
+          <li class="py-3 px-4 transition-colors duration-300 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Samsung</a></li>
+          <li class="py-3 px-4 transition-colors duration-300 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">iPhone</a></li>
+          <li class="py-3 px-4 transition-colors duration-300 hover:text-white hover:bg-[#2f7fff] dark:text-white md:rounded-lg"><a href="#">Pixel</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="flex flex-col-reverse bg-[#f9fbfc] md:flex-row">
-    <aside class="flex flex-col md:min-w-70">
-      <section class="flex flex-col gap-2 border border-gray-200 rounded-xl shadow-lg p-5 m-3 ">
+  <main class="flex flex-col-reverse gap-4 flex-1 bg-[#f9fbfc] md:flex-row dark:bg-[#171d2f]">
+    <aside class="flex flex-col pt-3 md:min-w-70">
+      <section class="flex flex-col gap-2 border border-gray-200 rounded-xl shadow-lg p-5 m-3 dark:bg-[#232d40] dark:border-none">
         <h3 class="text-[#2f7fff] p-1 font-bold text-2xl border-b-2 border-b-[#2f7fff]">Login</h3>
         <form class="flex flex-col pt-1">
           <div class="relative">
@@ -41,81 +41,81 @@
           </div>
           <div>
             <button type="submit"
-            class="text-white bg-[#2f7fff] w-full rounded-lg py-2 mt-3 hover:bg-[#1d72fa]">Login</button>
+            class="text-white bg-[#2f7fff] w-full rounded-lg py-2 mt-3 transition-colors duration-300 hover:bg-[#0060fa]">Login</button>
           </div>
         </form>
       </section>
-      <section class="flex flex-col border border-gray-200 rounded-xl shadow-lg p-5 m-3">
+      <section class="flex flex-col border border-gray-200 rounded-xl shadow-lg p-5 m-3 dark:bg-[#232d40] dark:border-none">
         <h3 class="text-[#2f7fff] p-1 font-bold text-2xl border-b-2 border-b-[#2f7fff]">Enlaces de interés</h3>
         <ul class="flex flex-col gap-2 p-1 pt-3">
-          <li class="py-1 px-3 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Topes de Gama</a></li>
-          <li class="py-1 px-3 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómprate un iPhone</a></li>
-          <li class="py-1 px-3 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómaprate un Xiaomi</a></li>
-          <li class="py-1 px-3 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómprate un Pixel</a></li>
+          <li class="py-1 px-3 transition-colors duration-300 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Topes de Gama</a></li>
+          <li class="py-1 px-3 transition-colors duration-300 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómprate un iPhone</a></li>
+          <li class="py-1 px-3 transition-colors duration-300 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómaprate un Xiaomi</a></li>
+          <li class="py-1 px-3 transition-colors duration-300 hover:text-[#2f7fff] hover:bg-[#d9eaff] rounded-lg"><a href="#">Cómprate un Pixel</a></li>
         </ul>
       </section>
     </aside>
 
-    <section class="flex flex-col w-full md:grid md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5 p-3">
-      <article class="group flex flex-col h-fit  p-3 transition-all duration-300 border-l-3 border-l-green-400 rounded-lg shadow-xl overflow-hidden">
+    <section class="flex flex-col md:grid md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:items-center md:w-300 gap-5 p-5 m-auto">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-green-400 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/pixel10.jpg" alt="Pixel 10" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-green-400">Pixel 10</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">El último buque insignia de Samsung con IA avanzada y cámara de 200MP. Increíblemente potente.</p>
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 1.099 €</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 1.099 €</footer>
       </article>
 
-      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-3 border-l-red-600 rounded-lg shadow-xl overflow-hidden">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-red-600 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/iphone17pro.jpg" alt="iPhone 17 Pro" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-red-600">iPhone 17 Pro</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">La máxima expresión de Apple con chip A17 Pro y teleobjetivo de 5x. Diseño de titanio ligero.</p>
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 1.319 €</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 1.319 €</footer>
       </article>
 
-      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-3 border-l-green-400 rounded-lg shadow-xl overflow-hidden">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-green-400 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/pixel9a.jpg" alt="Google Pixel 9 a" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-gree-400">Pixel 9a</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">La apuesta de Google por la fotografía computacional y la inteligencia artificial integrada en el móvil.
           </p >
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 549 €</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 549 €</footer>
       </article>
 
-      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-3 border-l-orange-400 rounded-lg shadow-xl overflow-hidden">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-orange-400 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/xiaomi15t.png" alt="Xiaomi 15 T" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-orange-400">Xiaomi 15T</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">Con un enfoque en la fotografía, este móvil ofrece lentes Leica y una experiencia de cámara profesional.
           </p>
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 499.99€</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 499.99€</footer>
       </article>
 
-      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-3 border-l-green-400 rounded-lg shadow-xl overflow-hidden">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-green-400 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/pixel9pro.jpg" alt="Pixel 9 Pro" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-green-400">Pixel 9 Pro</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">Rendimiento extremo y carga ultrarrápida, ideal para gaming y usuarios exigentes.</p>
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 999 €</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 999 €</footer>
       </article>
 
-      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-3 border-l-blue-300 rounded-lg shadow-xl overflow-hidden">
+      <article class="group flex flex-col h-fit p-3 transition-all duration-300 border-l-5 border-l-blue-300 rounded-lg shadow-xl overflow-hidden dark:bg-[#232d40]">
         <img src="/pocof8.jpeg" alt="Poco F8 Ultra" class="aspect-video w-full h-80 rounded-lg mb-4 object-cover object-center">
         <h3 class="text-2xl font-bold mb-2 text-blue-300">Poco F8 Ultra</h3>
         <div class="max-h-0 overflow-hidden duration-300 group-hover:max-h-40">
           <p class="mb-2">Innovador sistema de cámara Hasselblad y un diseño curvo distintivo. Un placer para la vista.</p>
         </div>
-        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200">Desde 829,99 €</footer>
+        <footer class="text-end p-2 rounded-lg text-gray-600 bg-gray-200 dark:bg-[#344357] dark:text-gray-300">Desde 829,99 €</footer>
       </article>
     </section>
   </main>
 
-  <footer class="text-center p-4 bg-[#e5e7eb]">Proyecto TailwindCSS - DAW - IES San Vicente 26-26</footer>
+  <footer class="text-center p-4 bg-[#e5e7eb] dark:bg-[#232d40] dark:text-gray-300">Proyecto TailwindCSS - DAW - IES San Vicente 26-26</footer>
 </body>
 
 </html>
